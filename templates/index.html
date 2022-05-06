@@ -1,12 +1,35 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Index Template</title>
+<title>CRUD App</title>
 {% endblock %}
 
 
 {% block body %}
-<h1>Index Template</h1>
-<p>This is content from the index.html template.</p>
+<h1>CRUD App</h1>
+<p>This is the base template for creating a CRUD app.</p>
+<div class="content">
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Added</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="">Delete</a>
+                <br />
+                <a href="">Update</a>
+            </td>
+        </tr>
+
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Add Item">
+        </form>
+    </table>
+</div>
 {% endblock %}
 
