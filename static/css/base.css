@@ -1,4 +1,11 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+form {
+    margin-top: 14px;
 }
